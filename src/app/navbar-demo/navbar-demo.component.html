@@ -1,11 +1,6 @@
-<div class="mat-app-background basic-container">
-  <mat-toolbar color="primary">
-    <span>App Name</span>
-    <span class="example-spacer"></span>
-    <button mat-button [matMenuTriggerFor]="appMenu">
-      <mat-icon>menu</mat-icon> Menu</button>
-  </mat-toolbar>
-  <mat-menu #appMenu="matMenu" [overlapTrigger]="true">
+<div class="custom">
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <mat-menu #menu="matMenu">
     <button mat-menu-item> Settings </button>
     <button mat-menu-item> Contact </button>
   </mat-menu>

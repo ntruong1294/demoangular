@@ -1,0 +1,14 @@
+<mat-toolbar class="header" color="primary">
+  <h1>My app {{agentAPI}}</h1>
+  <button mat-icon-button="" (click)="sidenav.toggle()">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-sidenav-container class="main">
+  <mat-sidenav position="end" #sidenav="" mode="side" [(opened)]="opened">
+    <app-right-menu></app-right-menu>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet name="mainContent"></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
